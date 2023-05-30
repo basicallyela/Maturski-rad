@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu Page</title>
+        <style>
+            body{
+                background-color: #381938;
+            }
+
+            .okvir {
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                width: 960px;
+                height: 512px;
+            }
+            .container {
+                font-family: Arial, Helvetica, sans-serif;
+                width: 896px;
+                height: 448px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 32px;
+                background-image: url(menu/bg1.png);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            img{
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                -o-user-select: none;
+                user-select: none;
+                pointer-events: none;
+                width: 40vw;
+                margin-bottom: 10vh;
+            }
+            button {
+                cursor: pointer;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 5vh;
+                color: #393852;
+                background-color:#ffd6ae;
+                height: 10vh;
+                width: 30vw;
+                border: 4px solid #ffd6ae;
+                margin: 10px;
+                border-radius: 5px;
+            }
+            button:hover{
+                background-color: #ffd6ae;
+                border-right: 4px solid #AC444A;
+                border-bottom: 4px solid #AC444A;
+                color: #AC444A;
+            }
+            button:active{
+                background-color: #ffd6ae;
+                border-left: 4px solid #AC444A;
+                border-top: 4px solid #AC444A;
+                border-right: 4px solid #ffd6ae;
+                border-bottom: 4px solid #ffd6ae;
+                color: #AC444A;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="okvir">
+            
+          <div class="container">
+            <img src="tgs.png" alt="" style="width: 30%; margin-top: 5%;">
+            <a href="index.html"><button>Play</button></a>
+            <a href="#"><button onclick="self.close()">Quit</button></a>
+          </div>
+        </div>
+    </body>
+</html>
